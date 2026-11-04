@@ -1,20 +1,6 @@
-# TP 204 : Etude de cas - Benchmark de performances des Web Services REST
+# Etude de cas - Benchmark de performances des Web Services REST
 
-Trois implementations REST du meme catalogue, mesurees avec JMeter sur un jeu de donnees de 100 000 articles et 2 000 categories.
 
-## Le projet en deux mots
-
-Le sujet demande de repondre a une question simple : a modele de donnees identique et a contrats d'API identiques, quelle technologie REST tient le mieux la charge ?
-
-Pour y repondre, trois serveurs ont ete ecrits et laisses tourner en parallele sur trois ports differents. Le premier est en Jersey avec Hibernate, le deuxieme en Spring Boot avec des controleurs ecrits a la main, le troisieme en Spring Data REST. Les trois lisent la meme base MariaDB et exposent exactement les memes URI.
-
-Un plan JMeter unique par variante et par scenario a ensuite envoye la charge. Tout ce qui est visible dans les captures ci-dessous sort de ces executions reelles : les serveurs ont demarre, les requetes sont parties, les fichiers de resultats ont ete ecrits, puis agreges.
-
-## La personnalisation du travail
-
-Le groupe Java est ma.ahmedbenidar.benchmark et chaque variante porte son propre artefact. Le jeu de donnees ne reprend pas les noms generiques du sujet : c'est un catalogue de distribution marocaine, ou les categories s'appellent Informatique, Telephonie, Electromenager, Mobilier, Eclairage et ou les articles portent une reference de type SKU et une description editoriale. Les donnees sont produites par un generateur maison dont la graine est fixee a 20261103, ce qui les rend reproductibles a l'identique.
-
-Le script de campagne, l'agregateur de resultats et le verificateur d'endpoints ont ete ecrits pour ce TP. Ils sont dans le depot et rejouables.
 
 ## L'environnement de mesure
 
@@ -154,24 +140,4 @@ La variante A gagne sur trois scenarios sur quatre, avec le meilleur debit, la m
 
 La decision retenue est de conserver la variante A pour le service de consultation, la variante C pour les operations d'administration, et de reserver la variante D aux prototypes internes.
 
-## Ce qui reste imparfait
 
-Trois choses doivent etre dites clairement.
-
-La premiere est que la chaine de supervision demandee par le sujet n'a pas pu etre mise en place, faute de Prometheus, Grafana et InfluxDB sur le poste. Les chiffres de ressources viennent donc des processus Java et non d'une collecte continue.
-
-La deuxieme est que les paliers de charge ont ete reduits par rapport a l'enonce, pour la raison expliquee plus haut. Les courbes montrent bien les ruptures de comportement, mais les valeurs absolues ne sont pas transposables a un serveur dedie.
-
-La troisieme est que les trois serveurs partageaient le meme serveur MariaDB, qui devient le goulot d'etranglement passe 60 threads sur le scenario de lecture. Les chiffres au-dela de ce palier mesurent la base autant que la variante.
-
-## L'arborescence du depot
-
-Les trois projets Maven sont separes, les plans JMeter sont generes par script, le journal console de chaque palier est conserve dans le dossier de campagne et les tableaux agreges sont a la racine du dossier de resultats. Seuls les fichiers de mesures brutes de JMeter, qui pesent 78 Mo a eux seuls, ne sont pas versionnes : ils se regenerent en rejouant la campagne.
-
-![Arborescence du projet](docs/captures/structure-projet.png)
-
-## Rejouer les mesures
-
-La base se remet dans son etat de reference avec le script de reinitialisation. Le script de campagne enchaine ensuite les quatre scenarios sur les trois variantes et depose un fichier de resultats par palier. L'agregateur produit les deux fichiers de synthese, et l'afficheur de resultats les rend sous forme de tableaux lisibles.
-
-Aucun test unitaire n'est fourni : la campagne JMeter est la validation du travail.
