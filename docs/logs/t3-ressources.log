@@ -1,0 +1,26 @@
+=== T3 - Empreinte memoire des trois variantes (au repos, apres campagne) ===
+Date : 2026-11-04 23:05:13
+
+Variante A - Jersey + Hibernate (9201)
+  PID ............. : 15424
+  Memoire privee .. : 782 Mo
+  Working set ..... : 554.9 Mo
+  Threads ......... : 74
+  Temps CPU ....... : 527.7 s
+
+Variante C - Spring @RestController (9202)
+  PID ............. : 14752
+  Memoire privee .. : 823.6 Mo
+  Working set ..... : 611.2 Mo
+  Threads ......... : 67
+  Temps CPU ....... : 492.4 s
+
+Variante D - Spring Data REST (9203)
+  PID ............. : 15644
+  Memoire privee .. : 845.2 Mo
+  Working set ..... : 659.3 Mo
+  Threads ......... : 95
+  Temps CPU ....... : 742 s
+
+Machine : Microsoft Windows 10 Famille 10.0.19045, 15.84 Go de RAM
+Processeur : Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz

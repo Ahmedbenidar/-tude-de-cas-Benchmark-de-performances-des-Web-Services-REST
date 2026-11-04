@@ -1,0 +1,8 @@
+=================================================
+ Variante A - Jersey JAX-RS + Hibernate
+ Demarrage      : 04/11/2026 21:46:00
+ Adresse        : http://localhost:9201/
+ Base de donnees: benchmark_rest (MariaDB 10.4)
+ Threads Grizzly: 32 coeur / 200 max
+ Endpoints      : /categories, /items
+=================================================

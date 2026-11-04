@@ -1,0 +1,20 @@
+nov. 04, 2026 9:45:53 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [name: benchmark]
+nov. 04, 2026 9:45:53 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 6.5.3.Final
+nov. 04, 2026 9:45:54 PM org.hibernate.cache.internal.RegionFactoryInitiator initiateService
+INFO: HHH000026: Second-level cache disabled
+nov. 04, 2026 9:45:55 PM org.hibernate.engine.jdbc.connections.internal.ConnectionProviderInitiator initiateService
+INFO: HHH000130: Instantiating explicit connection provider: org.hibernate.hikaricp.internal.HikariCPConnectionProvider
+[main] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[main] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+nov. 04, 2026 9:45:56 PM org.hibernate.dialect.Dialect checkVersion
+WARN: HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+nov. 04, 2026 9:45:56 PM org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl constructDialect
+WARN: HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+nov. 04, 2026 9:46:00 PM org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+nov. 04, 2026 9:46:00 PM org.glassfish.grizzly.http.server.NetworkListener start
+INFO: Started listener bound to [0.0.0.0:9201]
+nov. 04, 2026 9:46:00 PM org.glassfish.grizzly.http.server.HttpServer start
+INFO: [HttpServer] Started.

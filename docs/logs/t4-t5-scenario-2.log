@@ -1,0 +1,19 @@
+==============================================================================
+ T4 / T5 - DETAIL PAR ENDPOINT - S2 - RECHERCHE FILTREE (JOIN-filter)
+==============================================================================
++-----------------------------+-----------+-----------+---------+
+| Endpoint                    | Req/s     | p95 ms    | Err. %  |
++-----------------------------+-----------+-----------+---------+
+|             GET item par id |     468.9 |      15.0 |     0.0 |
+| GET items filtres par categorie |    1092.3 |      32.0 |     0.0 |
+|             GET item par id |     444.9 |      43.0 |     0.0 |
+| GET items filtres par categorie |    1038.4 |      71.0 |     0.0 |
+|             GET item par id |     214.8 |      32.0 |     0.0 |
+| GET items filtres par categorie |     500.2 |      85.0 |     0.0 |
+|             GET item par id |     191.1 |      86.0 |     0.0 |
+| GET items filtres par categorie |     446.2 |     169.0 |     0.0 |
+|             GET item par id |     128.7 |      64.0 |     0.0 |
+| GET items filtres par categorie |     300.0 |     120.0 |     0.0 |
+|             GET item par id |     145.2 |     122.0 |     0.0 |
+| GET items filtres par categorie |     339.1 |     195.0 |     0.0 |
++-----------------------------+-----------+-----------+---------+

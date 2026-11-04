@@ -1,0 +1,61 @@
+==============================================================================
+ T7 - SYNTHESE ET CONCLUSION
+==============================================================================
+
+>>> Debit global (requetes par seconde)
+  Meilleure variante : A - Jersey + Hibernate
+  A passe de 35,8 a 34,1 req/s sur toute la plage de S1, contre 27,1 a 26,3
+  pour C et 15,8 a 19,3 pour D. Sur S2 la hierarchie est identique mais les
+  ecarts deviennent enormes : 1 560 req/s pour A, 714 pour C, 428 pour D.
+  Sur S3 la course est serree (A 116 a 119, D 109 a 101, C 96 a 101).
+  Sur S4 c'est D qui prend la tete avec 624 et 606 req/s, devant A (441 et
+  472) et C (316 et 528).
+  Lecture : A gagne trois scenarios sur quatre ; D ne s'impose que sur les
+  gros corps de requete, la ou la generation HAL est amortie par le cout de
+  l'ecriture.
+
+>>> Latence p95
+  Meilleure variante : A - Jersey + Hibernate
+  S1 : p95 = 1 504 ms pour A, 2 456 ms pour C, 4 093 ms pour D au palier 20.
+  S2 : p95 = 30 ms pour A, 79 ms pour C, 112 ms pour D.
+  S3 : p95 = 396 ms pour A, 404 ms pour D, 435 ms pour C.
+  S4 : p95 = 102 ms pour D, 125 ms pour A, 143 ms pour C.
+  A tient la meilleure latence sur trois scenarios, D sur les gros corps,
+  C n'arrive en tete nulle part.
+  Attention : au-dela de 60 threads sur S1, les trois variantes depassent la
+  seconde de latence et la courbe se redresse verticalement. Ce n'est pas une
+  regression du code mais la saturation du serveur MariaDB, unique sur la
+  machine et partage avec les trois serveurs Java et le client JMeter.
+
+>>> Stabilite (taux d'erreur)
+  Egalite : les trois variantes terminent a 0 % d'erreur sur les 27 paliers.
+  La seule defaillance observee (404 sur la relation inverse de D) etait un
+  defaut d'exposition, corrige avant la campagne definitive.
+
+>>> Empreinte memoire
+  Variante la plus econome : A - Jersey + Hibernate
+  Memoire privee apres campagne : A 782 Mo, C 824 Mo, D 845 Mo.
+  Threads actifs : A 74, C 67, D 95.
+  D consomme le plus : la couche Spring Data REST genere les liens HAL de
+  chaque element de chaque page, ce qui coute des objets supplementaires.
+
+>>> Facilite d'exposition relationnelle
+  Meilleure variante : D - Spring Data REST, a une condition
+  D expose une entite en quelques annotations, mais n'expose PAS la relation
+  inverse sans declarer le cote mappedBy, et nomme alors la ressource d'apres
+  le nom du champ. Il a fallu un controleur dedie pour obtenir exactement le
+  contrat attendu. A et C donnent ce contrat des le depart, au prix de plus de
+  code ecrit a la main.
+
+>>> Verdict
+  Pour un catalogue principalement consulte par categorie, la variante A -
+  Jersey + Hibernate offre le meilleur compromis : meilleur debit sur trois
+  scenarios sur quatre, meilleure latence p95 sur trois scenarios sur quatre,
+  empreinte memoire la plus faible.
+  La variante C - Spring @RestController est la plus simple a maintenir mais
+  paie sa requete de jointure unique : deux fois moins de debit que A sur S2.
+  La variante D - Spring Data REST est la plus rapide a ecrire et la plus
+  performante sur les gros corps de requete, mais elle demande un travail
+  supplementaire des que le contrat d'API doit etre maitrise.
+  Decision : conserver A pour le service de consultation, C pour les
+  operations d'administration, et reserver D aux prototypes internes.

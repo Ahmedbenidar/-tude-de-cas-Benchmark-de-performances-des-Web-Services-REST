@@ -1,0 +1,17 @@
+# Sorties de compilation Maven
+target/
+
+# Fichiers de resultats bruts de JMeter : 78 Mo au total, regenerables par
+# le script de campagne. Les journaux console sont conserves, ils servent de
+# preuve d'execution.
+resultats/campagne/*.jtl
+
+# Dossiers de travail temporaires
+tmp/
+
+# Fichiers systeme et d'editeur
+.DS_Store
+Thumbs.db
+.idea/
+*.iml
+.vscode/

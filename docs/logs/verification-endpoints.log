@@ -1,0 +1,125 @@
+
+==================================================================
+ Variante A - Jersey JAX-RS + Hibernate
+ http://localhost:9201
+==================================================================
+
+-- Categories : liste, detail, creation, modification, suppression
+  GET     200    304 ms      527 o  http://localhost:9201/categories?page=0&size=5
+         corps : {"content":[{"id":1,"code":"CAT-0001","name":"Informatique Standard 001","updatedAt":"2026-08-28T08:56"},{"id":2,"code":"CAT-0002","name":"Telephonie  ...
+  GET     200    106 ms       89 o  http://localhost:9201/categories/7
+         corps : {"id":7,"code":"CAT-0007","name":"Jardinage Standard 007","updatedAt":"2026-09-22T16:17"}
+  POST    201    124 ms      107 o  http://localhost:9201/categories
+         corps : {"id":2001,"code":"VERIF-A","name":"Categorie de verification","updatedAt":"2026-11-04T23:03:38.615426500"}
+  PUT     200     53 ms      100 o  http://localhost:9201/categories/2001
+         corps : {"id":2001,"code":"VERIF-A","name":"Categorie renommee","updatedAt":"2026-11-04T23:03:38.730362500"}
+  GET     200     30 ms       90 o  http://localhost:9201/categories/2001
+         corps : {"id":2001,"code":"VERIF-A","name":"Categorie renommee","updatedAt":"2026-11-04T23:03:38"}
+  DELETE  204     94 ms        0 o  http://localhost:9201/categories/2001
+  GET    '404'  ECHEC  http://localhost:9201/categories/2001
+
+-- Items : liste paginee, detail, filtre par categorie, relation inverse
+  GET     200  45918 ms     1732 o  http://localhost:9201/items?page=0&size=5
+         corps : {"content":[{"id":1,"sku":"SKU-00000001","name":"Jardinage Connecte lot de 4 000001","description":"Reference SKU-00000001 - article du catalogue Maro ...
+  GET     200     56 ms      326 o  http://localhost:9201/items/4242
+         corps : {"id":4242,"sku":"SKU-00004242","name":"Photo Scolaire lot de 2 004242","description":"Reference SKU-00004242 - article du catalogue Maroc Distributio ...
+  GET     200     80 ms     3384 o  http://localhost:9201/items?categoryId=7&page=0&size=10
+         corps : {"content":[{"id":417,"sku":"SKU-00000417","name":"Jardinage Standard pack 000417","description":"Reference SKU-00000417 - article du catalogue Maroc  ...
+  GET     200     71 ms     3384 o  http://localhost:9201/categories/7/items?page=0&size=10
+         corps : {"content":[{"id":417,"sku":"SKU-00000417","name":"Jardinage Standard pack 000417","description":"Reference SKU-00000417 - article du catalogue Maroc  ...
+
+-- Items : creation, relecture, modification, relecture, suppression
+  POST    201     79 ms      280 o  http://localhost:9201/items
+         corps : {"id":118084,"sku":"VERIF-A-0001","name":"Article de verification","description":"Ligne creee par le script de verification des endpoints.","price":12 ...
+  GET     200     68 ms      280 o  http://localhost:9201/items/118084
+         corps : {"id":118084,"sku":"VERIF-A-0001","name":"Article de verification","description":"Ligne creee par le script de verification des endpoints.","price":12 ...
+  PUT     200     64 ms      268 o  http://localhost:9201/items/118084
+         corps : {"id":118084,"sku":"VERIF-A-0001","name":"Article modifie","description":"Description remplacee par le script de verification.","price":999.90,"stock" ...
+  GET     200     61 ms      268 o  http://localhost:9201/items/118084
+         corps : {"id":118084,"sku":"VERIF-A-0001","name":"Article modifie","description":"Description remplacee par le script de verification.","price":999.90,"stock" ...
+  DELETE  204     37 ms        0 o  http://localhost:9201/items/118084
+  GET    '404'  ECHEC  http://localhost:9201/items/118084
+
+==================================================================
+ Variante C - Spring Boot @RestController
+ http://localhost:9202
+==================================================================
+
+-- Categories : liste, detail, creation, modification, suppression
+  GET     200     65 ms      527 o  http://localhost:9202/categories?page=0&size=5
+         corps : {"content":[{"id":1,"code":"CAT-0001","name":"Informatique Standard 001","updatedAt":"2026-08-28T08:56"},{"id":2,"code":"CAT-0002","name":"Telephonie  ...
+  GET     200     68 ms       89 o  http://localhost:9202/categories/7
+         corps : {"id":7,"code":"CAT-0007","name":"Jardinage Standard 007","updatedAt":"2026-09-22T16:17"}
+  POST    201     74 ms      107 o  http://localhost:9202/categories
+         corps : {"id":2002,"code":"VERIF-C","name":"Categorie de verification","updatedAt":"2026-11-04T23:04:25.651812100"}
+  PUT     200     58 ms      100 o  http://localhost:9202/categories/2002
+         corps : {"id":2002,"code":"VERIF-C","name":"Categorie renommee","updatedAt":"2026-11-04T23:04:25.734257700"}
+  GET     200     62 ms       90 o  http://localhost:9202/categories/2002
+         corps : {"id":2002,"code":"VERIF-C","name":"Categorie renommee","updatedAt":"2026-11-04T23:04:25"}
+  DELETE  204     90 ms        0 o  http://localhost:9202/categories/2002
+  GET    '404'  ECHEC  http://localhost:9202/categories/2002
+
+-- Items : liste paginee, detail, filtre par categorie, relation inverse
+  GET     200    187 ms     6515 o  http://localhost:9202/items?page=0&size=5
+         corps : {"content":[{"id":1,"sku":"SKU-00000001","name":"Jardinage Connecte lot de 4 000001","description":"Reference SKU-00000001 - article du catalogue Maro ...
+  GET     200     49 ms      326 o  http://localhost:9202/items/4242
+         corps : {"id":4242,"sku":"SKU-00004242","name":"Photo Scolaire lot de 2 004242","description":"Reference SKU-00004242 - article du catalogue Maroc Distributio ...
+  GET     200     61 ms     3384 o  http://localhost:9202/items?categoryId=7&page=0&size=10
+         corps : {"content":[{"id":417,"sku":"SKU-00000417","name":"Jardinage Standard pack 000417","description":"Reference SKU-00000417 - article du catalogue Maroc  ...
+  GET     200     61 ms     3384 o  http://localhost:9202/categories/7/items?page=0&size=10
+         corps : {"content":[{"id":417,"sku":"SKU-00000417","name":"Jardinage Standard pack 000417","description":"Reference SKU-00000417 - article du catalogue Maroc  ...
+
+-- Items : creation, relecture, modification, relecture, suppression
+  POST    201     51 ms      280 o  http://localhost:9202/items
+         corps : {"id":118085,"sku":"VERIF-C-0001","name":"Article de verification","description":"Ligne creee par le script de verification des endpoints.","price":12 ...
+  GET     200     57 ms      280 o  http://localhost:9202/items/118085
+         corps : {"id":118085,"sku":"VERIF-C-0001","name":"Article de verification","description":"Ligne creee par le script de verification des endpoints.","price":12 ...
+  PUT     200     67 ms      268 o  http://localhost:9202/items/118085
+         corps : {"id":118085,"sku":"VERIF-C-0001","name":"Article modifie","description":"Description remplacee par le script de verification.","price":999.90,"stock" ...
+  GET     200     36 ms      268 o  http://localhost:9202/items/118085
+         corps : {"id":118085,"sku":"VERIF-C-0001","name":"Article modifie","description":"Description remplacee par le script de verification.","price":999.90,"stock" ...
+  DELETE  204     33 ms        0 o  http://localhost:9202/items/118085
+  GET    '404'  ECHEC  http://localhost:9202/items/118085
+
+==================================================================
+ Variante D - Spring Data REST
+ http://localhost:9203
+==================================================================
+
+-- Categories : liste, detail, creation, modification, suppression
+  GET     200     50 ms     2819 o  http://localhost:9203/categories?page=0&size=5
+         corps : { "_embedded" : { "categories" : [ { "code" : "CAT-0001", "name" : "Informatique Standard 001", "updatedAt" : "2026-08-28T08:56:00", "_links" : { "sel ...
+  GET     200     42 ms      375 o  http://localhost:9203/categories/7
+         corps : { "code" : "CAT-0007", "name" : "Jardinage Standard 007", "updatedAt" : "2026-09-22T16:17:00", "_links" : { "self" : { "href" : "http://localhost:9203 ...
+  POST    201     33 ms      133 o  http://localhost:9203/categories
+         corps : { "id" : 2003, "code" : "VERIF-D", "name" : "Categorie de verification", "updatedAt" : "2026-11-04T23:04:26.672788200" }
+  PUT     200     37 ms      126 o  http://localhost:9203/categories/2003
+         corps : { "id" : 2003, "code" : "VERIF-D", "name" : "Categorie renommee", "updatedAt" : "2026-11-04T23:04:26.708228200" }
+  GET     200     34 ms      379 o  http://localhost:9203/categories/2003
+         corps : { "code" : "VERIF-D", "name" : "Categorie renommee", "updatedAt" : "2026-11-04T23:04:26", "_links" : { "self" : { "href" : "http://localhost:9203/cate ...
+  DELETE  204     51 ms        0 o  http://localhost:9203/categories/2003
+  GET    '404'  ECHEC  http://localhost:9203/categories/2003
+
+-- Items : liste paginee, detail, filtre par categorie, relation inverse
+  GET     200    125 ms     8497 o  http://localhost:9203/items?page=0&size=5
+         corps : { "_embedded" : { "items" : [ { "sku" : "SKU-00000001", "name" : "Jardinage Connecte lot de 4 000001", "description" : "Reference SKU-00000001 - artic ...
+  GET     200     39 ms      539 o  http://localhost:9203/items/4242
+         corps : { "sku" : "SKU-00004242", "name" : "Photo Scolaire lot de 2 004242", "description" : "Reference SKU-00004242 - article du catalogue Maroc Distribution ...
+  GET     200     38 ms     6812 o  http://localhost:9203/items/search/parCategorie?categorieId=7&size=10
+         corps : { "_embedded" : { "items" : [ { "sku" : "SKU-00000417", "name" : "Jardinage Standard pack 000417", "description" : "Reference SKU-00000417 - article d ...
+  GET     200     38 ms      377 o  http://localhost:9203/items/4242/categorie
+         corps : { "code" : "CAT-0399", "name" : "Photo Scolaire 399", "updatedAt" : "2026-03-30T13:47:00", "_links" : { "self" : { "href" : "http://localhost:9203/cat ...
+  GET     200     40 ms     4267 o  http://localhost:9203/categories/7/items?page=0&size=10
+         corps : { "content" : [ { "id" : 417, "sku" : "SKU-00000417", "name" : "Jardinage Standard pack 000417", "description" : "Reference SKU-00000417 - article du  ...
+
+-- Items : creation, relecture, modification, relecture, suppression
+  POST    201     43 ms      274 o  http://localhost:9203/items
+         corps : { "id" : 118086, "sku" : "VERIF-D-0001", "name" : "Article de verification", "description" : "Ligne creee par le script de verification des endpoints. ...
+  GET     200     34 ms      495 o  http://localhost:9203/items/118086
+         corps : { "sku" : "VERIF-D-0001", "name" : "Article de verification", "description" : "Ligne creee par le script de verification des endpoints.", "price" : 12 ...
+  PUT     200     36 ms      261 o  http://localhost:9203/items/118086
+         corps : { "id" : 118086, "sku" : "VERIF-D-0001", "name" : "Article modifie", "description" : "Description remplacee par le script de verification.", "price" : ...
+  GET     200     34 ms      483 o  http://localhost:9203/items/118086
+         corps : { "sku" : "VERIF-D-0001", "name" : "Article modifie", "description" : "Description remplacee par le script de verification.", "price" : 999.90, "stock ...
+  DELETE  204     33 ms        0 o  http://localhost:9203/items/118086
+  GET    '404'  ECHEC  http://localhost:9203/items/118086

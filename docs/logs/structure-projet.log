@@ -1,0 +1,55 @@
+PS C:\Users\dell\Desktop\tp204_benchmark_rest> tree /F /A
+
+tp204_benchmark_rest
+|-- benchmark
+|   |-- afficher-resultats.py
+|   |-- agreger-resultats.py
+|   |-- ecrire-tableaux.py
+|   |-- executer-campagne.ps1
+|   |-- relever-ressources.ps1
+|   |-- verifier-endpoints.ps1
+|-- docs
+|   +-- captures\  (21 fichiers)
+|   +-- logs\  (23 fichiers)
+|   +-- tools\  (1 fichiers)
+|-- donnees
+|   |-- category.csv
+|   |-- generer_donnees.py
+|   |-- item.csv
+|-- jmeter
+|   |-- generer-donnees.py
+|   |-- generer-plans.py
+|   |-- scenario-1-variante-a.jmx
+|   |-- scenario-1-variante-c.jmx
+|   |-- scenario-1-variante-d.jmx
+|   |-- scenario-2-variante-a.jmx
+|   |-- scenario-2-variante-c.jmx
+|   |-- scenario-2-variante-d.jmx
+|   |-- scenario-3-variante-a.jmx
+|   |-- scenario-3-variante-c.jmx
+|   |-- scenario-3-variante-d.jmx
+|   |-- scenario-4-variante-a.jmx
+|   |-- scenario-4-variante-c.jmx
+|   |-- scenario-4-variante-d.jmx
+|   +-- donnees\  (7 fichiers)
+|-- resultats
+|   |-- t2-resume.csv
+|   |-- t4-t5-endpoints.csv
+|   +-- campagne\  (55 fichiers)
+|-- sql
+|   |-- 00-reinitialiser.sql
+|   |-- 01-schema.sql
+|   |-- 02-charger-donnees.sql
+|   |-- 03-ajout-description.sql
+|-- variante-a-jersey-hibernate
+|   |-- pom.xml
+|   +-- src\  (13 fichiers)
+|   +-- target\  (64 fichiers)
+|-- variante-c-spring-restcontroller
+|   |-- pom.xml
+|   +-- src\  (11 fichiers)
+|   +-- target\  (16 fichiers)
+|-- variante-d-spring-data-rest
+|   |-- pom.xml
+|   +-- src\  (9 fichiers)
+|   +-- target\  (14 fichiers)

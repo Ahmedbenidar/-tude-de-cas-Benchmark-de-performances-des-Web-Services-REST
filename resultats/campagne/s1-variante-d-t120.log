@@ -1,0 +1,429 @@
+2026-11-04 22:53:25,423 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-11-04 22:53:25,466 INFO o.a.j.JMeter: Loading user properties from: C:\Users\dell\tools\apache-jmeter-5.6.3\bin\user.properties
+2026-11-04 22:53:25,468 INFO o.a.j.JMeter: Loading system properties from: C:\Users\dell\tools\apache-jmeter-5.6.3\bin\system.properties
+2026-11-04 22:53:25,468 INFO o.a.j.JMeter: Setting JMeter property: port=9203
+2026-11-04 22:53:25,468 INFO o.a.j.JMeter: Setting JMeter property: threads=120
+2026-11-04 22:53:25,468 INFO o.a.j.JMeter: Setting JMeter property: montee=10
+2026-11-04 22:53:25,470 INFO o.a.j.JMeter: Setting JMeter property: duree=60
+2026-11-04 22:53:25,482 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-11-04 22:53:25,482 INFO o.a.j.JMeter: Version 5.6.3
+2026-11-04 22:53:25,482 INFO o.a.j.JMeter: java.version=21.0.9
+2026-11-04 22:53:25,482 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2026-11-04 22:53:25,483 INFO o.a.j.JMeter: os.name=Windows 10
+2026-11-04 22:53:25,483 INFO o.a.j.JMeter: os.arch=amd64
+2026-11-04 22:53:25,483 INFO o.a.j.JMeter: os.version=10.0
+2026-11-04 22:53:25,483 INFO o.a.j.JMeter: file.encoding=UTF-8
+2026-11-04 22:53:25,483 INFO o.a.j.JMeter: java.awt.headless=true
+2026-11-04 22:53:25,483 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-11-04 22:53:25,483 INFO o.a.j.JMeter: Available Processors =8
+2026-11-04 22:53:25,501 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-11-04 22:53:25,502 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-11-04 22:53:25,502 INFO o.a.j.JMeter: JMeterHome=C:\Users\dell\tools\apache-jmeter-5.6.3
+2026-11-04 22:53:25,503 INFO o.a.j.JMeter: user.dir  =C:\Users\dell\Desktop\tp204_benchmark_rest
+2026-11-04 22:53:25,504 INFO o.a.j.JMeter: PWD       =C:\Users\dell\Desktop\tp204_benchmark_rest
+2026-11-04 22:53:30,084 INFO o.a.j.JMeter: IP: 192.168.56.1 Name: DESKTOP-DGE1855 FullName: DESKTOP-DGE1855
+2026-11-04 22:53:30,096 INFO o.a.j.s.FileServer: Default base='C:\Users\dell\Desktop\tp204_benchmark_rest'
+2026-11-04 22:53:30,104 INFO o.a.j.s.FileServer: Set new base='C:\Users\dell\Desktop\tp204_benchmark_rest\jmeter'
+2026-11-04 22:53:30,509 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-11-04 22:53:30,577 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-11-04 22:53:30,583 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-11-04 22:53:30,591 INFO o.a.j.s.SaveService: Loading file: C:\Users\dell\Desktop\tp204_benchmark_rest\jmeter\scenario-1-variante-d.jmx
+2026-11-04 22:53:30,662 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-11-04 22:53:30,662 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-11-04 22:53:30,662 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-11-04 22:53:30,662 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-11-04 22:53:30,714 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-04 22:53:30,715 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-04 22:53:30,715 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-04 22:53:30,715 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-11-04 22:53:30,715 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-11-04 22:53:30,715 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-11-04 22:53:30,747 INFO o.a.j.JMeter: Creating summariser <summary>
+2026-11-04 22:53:30,775 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-11-04 22:53:30,776 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-11-04 22:53:30,777 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-11-04 22:53:30,788 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-11-04 22:53:30,788 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-11-04 22:53:30,922 INFO o.a.j.JMeter: Running test (1793832810922)
+2026-11-04 22:53:30,950 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Palier de charge
+2026-11-04 22:53:30,950 INFO o.a.j.e.StandardJMeterEngine: Starting 120 threads for group Palier de charge.
+2026-11-04 22:53:30,950 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-11-04 22:53:30,950 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=120 ramp-up=10 delayedStart=false
+2026-11-04 22:53:31,151 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-1
+2026-11-04 22:53:31,162 INFO o.a.j.s.FileServer: Stored: C:\Users\dell\Desktop\tp204_benchmark_rest/jmeter/donnees/corps-leger.csv
+2026-11-04 22:53:31,196 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-11-04 22:53:31,197 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-11-04 22:53:31,207 INFO o.a.j.s.FileServer: Stored: C:\Users\dell\Desktop\tp204_benchmark_rest/jmeter/donnees/ids-categories-lecture.csv
+2026-11-04 22:53:31,208 INFO o.a.j.s.FileServer: Stored: C:\Users\dell\Desktop\tp204_benchmark_rest/jmeter/donnees/ids-items-lecture.csv
+2026-11-04 22:53:31,233 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-2
+2026-11-04 22:53:31,240 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = DESKTOP-DGE1855
+2026-11-04 22:53:31,252 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-11-04 22:53:31,317 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-3
+2026-11-04 22:53:31,395 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-4
+2026-11-04 22:53:31,479 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-5
+2026-11-04 22:53:31,525 INFO o.a.j.r.Summariser: summary +      1 in 00:00:01 =    1.7/s Avg:   115 Min:   115 Max:   115 Err:     0 (0.00%) Active: 5 Started: 5 Finished: 0
+2026-11-04 22:53:31,553 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-6
+2026-11-04 22:53:31,640 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-7
+2026-11-04 22:53:31,718 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-8
+2026-11-04 22:53:31,795 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-9
+2026-11-04 22:53:31,879 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-10
+2026-11-04 22:53:31,955 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-11
+2026-11-04 22:53:32,038 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-12
+2026-11-04 22:53:32,123 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-13
+2026-11-04 22:53:32,195 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-14
+2026-11-04 22:53:32,270 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-15
+2026-11-04 22:53:32,360 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-16
+2026-11-04 22:53:32,437 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-17
+2026-11-04 22:53:32,521 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-18
+2026-11-04 22:53:32,600 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-19
+2026-11-04 22:53:32,683 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-20
+2026-11-04 22:53:32,761 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-21
+2026-11-04 22:53:32,845 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-22
+2026-11-04 22:53:32,930 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-23
+2026-11-04 22:53:33,012 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-24
+2026-11-04 22:53:33,089 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-25
+2026-11-04 22:53:33,172 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-26
+2026-11-04 22:53:33,251 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-27
+2026-11-04 22:53:33,331 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-28
+2026-11-04 22:53:33,413 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-29
+2026-11-04 22:53:33,500 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-30
+2026-11-04 22:53:33,579 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-31
+2026-11-04 22:53:33,653 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-32
+2026-11-04 22:53:33,732 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-33
+2026-11-04 22:53:33,823 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-34
+2026-11-04 22:53:33,896 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-35
+2026-11-04 22:53:33,983 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-36
+2026-11-04 22:53:34,068 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-37
+2026-11-04 22:53:34,149 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-38
+2026-11-04 22:53:34,228 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-39
+2026-11-04 22:53:34,309 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-40
+2026-11-04 22:53:34,388 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-41
+2026-11-04 22:53:34,462 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-42
+2026-11-04 22:53:34,554 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-43
+2026-11-04 22:53:34,636 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-44
+2026-11-04 22:53:34,716 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-45
+2026-11-04 22:53:34,798 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-46
+2026-11-04 22:53:34,879 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-47
+2026-11-04 22:53:34,960 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-48
+2026-11-04 22:53:35,042 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-49
+2026-11-04 22:53:35,126 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-50
+2026-11-04 22:53:35,207 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-51
+2026-11-04 22:53:35,281 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-52
+2026-11-04 22:53:35,363 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-53
+2026-11-04 22:53:35,446 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-54
+2026-11-04 22:53:35,527 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-55
+2026-11-04 22:53:35,604 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-56
+2026-11-04 22:53:35,687 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-57
+2026-11-04 22:53:35,766 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-58
+2026-11-04 22:53:35,848 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-59
+2026-11-04 22:53:35,927 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-60
+2026-11-04 22:53:36,011 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-61
+2026-11-04 22:53:36,094 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-62
+2026-11-04 22:53:36,176 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-63
+2026-11-04 22:53:36,256 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-64
+2026-11-04 22:53:36,336 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-65
+2026-11-04 22:53:36,416 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-66
+2026-11-04 22:53:36,498 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-67
+2026-11-04 22:53:36,580 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-68
+2026-11-04 22:53:36,663 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-69
+2026-11-04 22:53:36,743 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-70
+2026-11-04 22:53:36,824 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-71
+2026-11-04 22:53:36,906 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-72
+2026-11-04 22:53:36,989 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-73
+2026-11-04 22:53:37,071 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-74
+2026-11-04 22:53:37,151 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-75
+2026-11-04 22:53:37,232 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-76
+2026-11-04 22:53:37,300 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-77
+2026-11-04 22:53:37,393 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-78
+2026-11-04 22:53:37,464 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-79
+2026-11-04 22:53:37,546 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-80
+2026-11-04 22:53:37,628 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-81
+2026-11-04 22:53:37,715 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-82
+2026-11-04 22:53:37,808 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-83
+2026-11-04 22:53:37,875 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-84
+2026-11-04 22:53:37,964 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-85
+2026-11-04 22:53:38,043 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-86
+2026-11-04 22:53:38,125 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-87
+2026-11-04 22:53:38,206 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-88
+2026-11-04 22:53:38,285 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-89
+2026-11-04 22:53:38,354 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-90
+2026-11-04 22:53:38,429 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-91
+2026-11-04 22:53:38,514 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-92
+2026-11-04 22:53:38,595 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-93
+2026-11-04 22:53:38,674 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-94
+2026-11-04 22:53:38,757 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-95
+2026-11-04 22:53:38,840 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-96
+2026-11-04 22:53:38,922 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-97
+2026-11-04 22:53:39,009 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-98
+2026-11-04 22:53:39,091 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-99
+2026-11-04 22:53:39,174 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-100
+2026-11-04 22:53:39,258 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-101
+2026-11-04 22:53:39,341 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-102
+2026-11-04 22:53:39,423 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-103
+2026-11-04 22:53:39,504 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-104
+2026-11-04 22:53:39,588 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-105
+2026-11-04 22:53:39,673 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-106
+2026-11-04 22:53:39,756 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-107
+2026-11-04 22:53:39,836 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-108
+2026-11-04 22:53:39,919 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-109
+2026-11-04 22:53:40,004 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-110
+2026-11-04 22:53:40,089 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-111
+2026-11-04 22:53:40,175 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-112
+2026-11-04 22:53:40,253 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-113
+2026-11-04 22:53:40,338 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-114
+2026-11-04 22:53:40,422 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-115
+2026-11-04 22:53:40,502 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-116
+2026-11-04 22:53:40,583 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-117
+2026-11-04 22:53:40,665 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-118
+2026-11-04 22:53:40,747 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-119
+2026-11-04 22:53:40,830 INFO o.a.j.t.JMeterThread: Thread started: Palier de charge 1-120
+2026-11-04 22:54:00,068 INFO o.a.j.r.Summariser: summary +    507 in 00:00:29 =   17.8/s Avg:  4871 Min:     7 Max: 15496 Err:     0 (0.00%) Active: 120 Started: 120 Finished: 0
+2026-11-04 22:54:00,069 INFO o.a.j.r.Summariser: summary =    508 in 00:00:29 =   17.4/s Avg:  4861 Min:     7 Max: 15496 Err:     0 (0.00%)
+2026-11-04 22:54:30,111 INFO o.a.j.r.Summariser: summary +    507 in 00:00:30 =   16.9/s Avg:  6851 Min:    20 Max: 15360 Err:     0 (0.00%) Active: 120 Started: 120 Finished: 0
+2026-11-04 22:54:30,112 INFO o.a.j.r.Summariser: summary =   1015 in 00:00:59 =   17.1/s Avg:  5855 Min:     7 Max: 15496 Err:     0 (0.00%)
+2026-11-04 22:54:31,107 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-50
+2026-11-04 22:54:31,107 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-50
+2026-11-04 22:54:31,139 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-72
+2026-11-04 22:54:31,139 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-72
+2026-11-04 22:54:31,296 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-9
+2026-11-04 22:54:31,297 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-9
+2026-11-04 22:54:31,313 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-26
+2026-11-04 22:54:31,313 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-26
+2026-11-04 22:54:31,358 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-108
+2026-11-04 22:54:31,359 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-108
+2026-11-04 22:54:31,447 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-45
+2026-11-04 22:54:31,447 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-45
+2026-11-04 22:54:31,507 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-8
+2026-11-04 22:54:31,508 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-8
+2026-11-04 22:54:31,595 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-102
+2026-11-04 22:54:31,595 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-102
+2026-11-04 22:54:31,638 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-59
+2026-11-04 22:54:31,638 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-59
+2026-11-04 22:54:31,711 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-56
+2026-11-04 22:54:31,711 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-56
+2026-11-04 22:54:31,857 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-48
+2026-11-04 22:54:31,858 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-48
+2026-11-04 22:54:31,937 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-52
+2026-11-04 22:54:31,938 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-52
+2026-11-04 22:54:31,955 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-29
+2026-11-04 22:54:31,955 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-29
+2026-11-04 22:54:31,958 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-97
+2026-11-04 22:54:31,958 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-97
+2026-11-04 22:54:32,038 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-105
+2026-11-04 22:54:32,038 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-105
+2026-11-04 22:54:32,101 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-3
+2026-11-04 22:54:32,101 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-3
+2026-11-04 22:54:32,104 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-67
+2026-11-04 22:54:32,104 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-67
+2026-11-04 22:54:32,174 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-5
+2026-11-04 22:54:32,175 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-5
+2026-11-04 22:54:32,194 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-117
+2026-11-04 22:54:32,195 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-117
+2026-11-04 22:54:32,209 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-66
+2026-11-04 22:54:32,210 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-66
+2026-11-04 22:54:32,317 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-34
+2026-11-04 22:54:32,317 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-34
+2026-11-04 22:54:32,810 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-47
+2026-11-04 22:54:32,811 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-47
+2026-11-04 22:54:32,904 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-54
+2026-11-04 22:54:32,904 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-54
+2026-11-04 22:54:32,919 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-114
+2026-11-04 22:54:32,919 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-114
+2026-11-04 22:54:32,919 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-96
+2026-11-04 22:54:32,919 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-96
+2026-11-04 22:54:32,942 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-30
+2026-11-04 22:54:32,942 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-30
+2026-11-04 22:54:33,085 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-76
+2026-11-04 22:54:33,085 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-76
+2026-11-04 22:54:33,251 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-79
+2026-11-04 22:54:33,251 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-79
+2026-11-04 22:54:33,268 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-53
+2026-11-04 22:54:33,268 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-53
+2026-11-04 22:54:33,285 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-85
+2026-11-04 22:54:33,285 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-85
+2026-11-04 22:54:33,385 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-7
+2026-11-04 22:54:33,386 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-7
+2026-11-04 22:54:33,439 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-98
+2026-11-04 22:54:33,439 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-98
+2026-11-04 22:54:33,757 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-91
+2026-11-04 22:54:33,757 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-91
+2026-11-04 22:54:33,783 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-49
+2026-11-04 22:54:33,784 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-49
+2026-11-04 22:54:33,789 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-1
+2026-11-04 22:54:33,789 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-1
+2026-11-04 22:54:33,812 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-20
+2026-11-04 22:54:33,812 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-20
+2026-11-04 22:54:33,813 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-103
+2026-11-04 22:54:33,813 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-103
+2026-11-04 22:54:33,836 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-44
+2026-11-04 22:54:33,836 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-44
+2026-11-04 22:54:33,934 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-75
+2026-11-04 22:54:33,935 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-75
+2026-11-04 22:54:33,944 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-60
+2026-11-04 22:54:33,944 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-60
+2026-11-04 22:54:33,999 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-92
+2026-11-04 22:54:33,999 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-92
+2026-11-04 22:54:34,052 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-18
+2026-11-04 22:54:34,052 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-18
+2026-11-04 22:54:34,070 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-95
+2026-11-04 22:54:34,070 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-95
+2026-11-04 22:54:34,072 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-110
+2026-11-04 22:54:34,073 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-110
+2026-11-04 22:54:34,116 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-38
+2026-11-04 22:54:34,116 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-38
+2026-11-04 22:54:34,147 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-12
+2026-11-04 22:54:34,147 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-12
+2026-11-04 22:54:34,275 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-57
+2026-11-04 22:54:34,275 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-57
+2026-11-04 22:54:34,397 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-39
+2026-11-04 22:54:34,398 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-39
+2026-11-04 22:54:34,510 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-22
+2026-11-04 22:54:34,512 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-22
+2026-11-04 22:54:34,607 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-73
+2026-11-04 22:54:34,607 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-73
+2026-11-04 22:54:34,701 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-106
+2026-11-04 22:54:34,701 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-106
+2026-11-04 22:54:34,775 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-15
+2026-11-04 22:54:34,775 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-15
+2026-11-04 22:54:34,802 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-65
+2026-11-04 22:54:34,802 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-65
+2026-11-04 22:54:34,851 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-19
+2026-11-04 22:54:34,851 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-19
+2026-11-04 22:54:34,852 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-90
+2026-11-04 22:54:34,852 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-90
+2026-11-04 22:54:34,852 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-112
+2026-11-04 22:54:34,852 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-112
+2026-11-04 22:54:34,934 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-63
+2026-11-04 22:54:34,934 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-113
+2026-11-04 22:54:34,934 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-63
+2026-11-04 22:54:34,934 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-113
+2026-11-04 22:54:34,937 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-80
+2026-11-04 22:54:34,937 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-80
+2026-11-04 22:54:34,941 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-100
+2026-11-04 22:54:34,941 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-100
+2026-11-04 22:54:34,991 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-42
+2026-11-04 22:54:34,991 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-42
+2026-11-04 22:54:34,994 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-37
+2026-11-04 22:54:34,994 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-37
+2026-11-04 22:54:35,078 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-78
+2026-11-04 22:54:35,078 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-78
+2026-11-04 22:54:35,085 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-81
+2026-11-04 22:54:35,085 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-81
+2026-11-04 22:54:35,106 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-118
+2026-11-04 22:54:35,107 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-118
+2026-11-04 22:54:35,150 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-61
+2026-11-04 22:54:35,150 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-61
+2026-11-04 22:54:35,161 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-2
+2026-11-04 22:54:35,161 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-2
+2026-11-04 22:54:35,204 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-27
+2026-11-04 22:54:35,204 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-25
+2026-11-04 22:54:35,204 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-83
+2026-11-04 22:54:35,204 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-27
+2026-11-04 22:54:35,204 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-25
+2026-11-04 22:54:35,204 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-83
+2026-11-04 22:54:35,212 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-89
+2026-11-04 22:54:35,212 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-43
+2026-11-04 22:54:35,213 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-43
+2026-11-04 22:54:35,213 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-89
+2026-11-04 22:54:35,215 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-94
+2026-11-04 22:54:35,216 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-94
+2026-11-04 22:54:35,217 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-77
+2026-11-04 22:54:35,217 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-77
+2026-11-04 22:54:35,256 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-64
+2026-11-04 22:54:35,256 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-64
+2026-11-04 22:54:35,271 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-33
+2026-11-04 22:54:35,271 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-33
+2026-11-04 22:54:35,318 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-82
+2026-11-04 22:54:35,319 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-82
+2026-11-04 22:54:35,487 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-101
+2026-11-04 22:54:35,488 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-101
+2026-11-04 22:54:35,509 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-46
+2026-11-04 22:54:35,509 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-46
+2026-11-04 22:54:35,560 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-31
+2026-11-04 22:54:35,560 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-31
+2026-11-04 22:54:35,622 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-93
+2026-11-04 22:54:35,622 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-93
+2026-11-04 22:54:35,652 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-88
+2026-11-04 22:54:35,652 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-88
+2026-11-04 22:54:35,698 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-70
+2026-11-04 22:54:35,699 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-70
+2026-11-04 22:54:35,761 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-41
+2026-11-04 22:54:35,761 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-51
+2026-11-04 22:54:35,762 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-41
+2026-11-04 22:54:35,762 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-51
+2026-11-04 22:54:35,875 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-11
+2026-11-04 22:54:35,876 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-11
+2026-11-04 22:54:35,981 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-40
+2026-11-04 22:54:35,981 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-40
+2026-11-04 22:54:36,106 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-35
+2026-11-04 22:54:36,106 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-35
+2026-11-04 22:54:36,125 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-111
+2026-11-04 22:54:36,125 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-111
+2026-11-04 22:54:36,126 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-104
+2026-11-04 22:54:36,126 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-104
+2026-11-04 22:54:36,345 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-23
+2026-11-04 22:54:36,345 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-23
+2026-11-04 22:54:36,483 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-99
+2026-11-04 22:54:36,483 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-99
+2026-11-04 22:54:36,498 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-14
+2026-11-04 22:54:36,499 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-14
+2026-11-04 22:54:36,499 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-120
+2026-11-04 22:54:36,499 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-120
+2026-11-04 22:54:36,583 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-116
+2026-11-04 22:54:36,583 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-116
+2026-11-04 22:54:36,612 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-115
+2026-11-04 22:54:36,612 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-115
+2026-11-04 22:54:36,804 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-86
+2026-11-04 22:54:36,805 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-86
+2026-11-04 22:54:36,852 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-58
+2026-11-04 22:54:36,853 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-58
+2026-11-04 22:54:36,975 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-84
+2026-11-04 22:54:36,976 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-84
+2026-11-04 22:54:36,989 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-62
+2026-11-04 22:54:36,990 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-62
+2026-11-04 22:54:37,003 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-119
+2026-11-04 22:54:37,004 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-119
+2026-11-04 22:54:37,334 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-55
+2026-11-04 22:54:37,334 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-55
+2026-11-04 22:54:37,445 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-32
+2026-11-04 22:54:37,445 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-32
+2026-11-04 22:54:37,516 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-17
+2026-11-04 22:54:37,517 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-17
+2026-11-04 22:54:37,604 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-21
+2026-11-04 22:54:37,605 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-21
+2026-11-04 22:54:37,631 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-74
+2026-11-04 22:54:37,631 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-74
+2026-11-04 22:54:37,640 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-28
+2026-11-04 22:54:37,641 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-28
+2026-11-04 22:54:37,793 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-6
+2026-11-04 22:54:37,794 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-6
+2026-11-04 22:54:37,869 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-13
+2026-11-04 22:54:37,870 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-13
+2026-11-04 22:54:37,947 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-10
+2026-11-04 22:54:37,947 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-10
+2026-11-04 22:54:38,090 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-107
+2026-11-04 22:54:38,090 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-107
+2026-11-04 22:54:38,124 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-109
+2026-11-04 22:54:38,124 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-109
+2026-11-04 22:54:38,152 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-16
+2026-11-04 22:54:38,152 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-16
+2026-11-04 22:54:38,330 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-4
+2026-11-04 22:54:38,330 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-4
+2026-11-04 22:54:38,408 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-87
+2026-11-04 22:54:38,408 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-87
+2026-11-04 22:54:38,415 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-68
+2026-11-04 22:54:38,416 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-68
+2026-11-04 22:54:38,418 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-71
+2026-11-04 22:54:38,418 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-71
+2026-11-04 22:54:38,437 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-69
+2026-11-04 22:54:38,438 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-69
+2026-11-04 22:54:38,474 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-36
+2026-11-04 22:54:38,474 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-36
+2026-11-04 22:54:38,673 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Palier de charge 1-24
+2026-11-04 22:54:38,673 INFO o.a.j.t.JMeterThread: Thread finished: Palier de charge 1-24
+2026-11-04 22:54:38,674 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-11-04 22:54:38,674 INFO o.a.j.s.FileServer: Close: C:\Users\dell\Desktop\tp204_benchmark_rest/jmeter/donnees/ids-categories-lecture.csv
+2026-11-04 22:54:38,674 INFO o.a.j.s.FileServer: Close: C:\Users\dell\Desktop\tp204_benchmark_rest/jmeter/donnees/ids-items-lecture.csv
+2026-11-04 22:54:38,674 INFO o.a.j.s.FileServer: Close: C:\Users\dell\Desktop\tp204_benchmark_rest/jmeter/donnees/corps-leger.csv
+2026-11-04 22:54:38,675 INFO o.a.j.r.Summariser: summary +    133 in 00:00:09 =   15.5/s Avg:  8418 Min:  3179 Max: 16536 Err:     0 (0.00%) Active: 0 Started: 120 Finished: 120
+2026-11-04 22:54:38,676 INFO o.a.j.r.Summariser: summary =   1148 in 00:01:08 =   16.9/s Avg:  6152 Min:     7 Max: 16536 Err:     0 (0.00%)

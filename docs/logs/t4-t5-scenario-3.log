@@ -1,0 +1,43 @@
+==============================================================================
+ T4 / T5 - DETAIL PAR ENDPOINT - S3 - CHARGE MIXTE (MIXED)
+==============================================================================
++-----------------------------+-----------+-----------+---------+
+| Endpoint                    | Req/s     | p95 ms    | Err. %  |
++-----------------------------+-----------+-----------+---------+
+|             DELETE items id |      11.7 |     146.0 |     0.0 |
+|              GET items page |      46.8 |     460.4 |     0.0 |
+|             POST categories |      11.7 |     136.0 |     0.0 |
+|             POST items 1 Ko |      23.4 |     211.2 |     0.0 |
+|           PUT categories id |      11.7 |     142.0 |     0.0 |
+|           PUT items id 1 Ko |      11.7 |     231.1 |     0.0 |
+|             DELETE items id |      11.9 |     327.5 |     0.0 |
+|              GET items page |      47.9 |     583.0 |     0.0 |
+|             POST categories |      11.9 |     308.6 |     0.0 |
+|             POST items 1 Ko |      24.0 |     516.0 |     0.0 |
+|           PUT categories id |      11.9 |     316.4 |     0.0 |
+|           PUT items id 1 Ko |      12.0 |     552.0 |     0.0 |
+|             DELETE items id |       9.6 |     184.0 |     0.0 |
+|              GET items page |      38.4 |     493.2 |     0.0 |
+|             POST categories |       9.6 |     106.0 |     0.0 |
+|             POST items 1 Ko |      19.2 |     223.8 |     0.0 |
+|           PUT categories id |       9.6 |     171.8 |     0.0 |
+|           PUT items id 1 Ko |       9.6 |     296.0 |     0.0 |
+|             DELETE items id |      10.1 |     396.0 |     0.0 |
+|              GET items page |      40.6 |     674.0 |     0.0 |
+|             POST categories |      10.1 |     220.0 |     0.0 |
+|             POST items 1 Ko |      20.3 |     514.5 |     0.0 |
+|           PUT categories id |      10.0 |     385.0 |     0.0 |
+|           PUT items id 1 Ko |      10.2 |     687.8 |     0.0 |
+|             DELETE items id |      11.0 |     247.0 |     0.0 |
+|              GET items page |      43.6 |     465.0 |     0.0 |
+|             POST categories |      11.0 |     156.3 |     0.0 |
+|             POST items 1 Ko |      21.9 |     162.0 |     0.0 |
+|           PUT categories id |      10.9 |     159.6 |     0.0 |
+|           PUT items id 1 Ko |      11.0 |     188.0 |     0.0 |
+|             DELETE items id |      10.1 |     765.0 |     0.0 |
+|              GET items page |      40.6 |     788.1 |     0.0 |
+|             POST categories |      10.0 |     436.2 |     0.0 |
+|             POST items 1 Ko |      20.3 |     487.1 |     0.0 |
+|           PUT categories id |      10.0 |     490.8 |     0.0 |
+|           PUT items id 1 Ko |      10.2 |     584.0 |     0.0 |
++-----------------------------+-----------+-----------+---------+

@@ -1,0 +1,50 @@
+==============================================================================
+ T6 - INCIDENTS RENCONTRES PENDANT LA CAMPAGNE
+==============================================================================
+
+>>> Incident 1 - 404 sur la relation inverse de la variante D
+  Run ......... : S1 variante D, premier passage complet
+  Symptome .... : 19 % de requetes en erreur, toutes sur
+                 GET /categories/{id}/items, code HTTP 404
+  Cause ....... : Spring Data REST n'expose une association que si l'entite
+                 parente declare le cote inverse. La classe Categorie ne
+                 possedait pas de collection produits, donc la ressource
+                 /categories/{id}/items n'existait pas du tout.
+  Correction .. : Ajout de la collection produits (mappedBy = "categorie",
+                 chargement paresseux, ignoree a la serialisation JSON), puis
+                 d'un controleur dedie qui publie /categories/{id}/items avec
+                 exactement la meme enveloppe que les variantes A et C.
+  Verification  : 200 OK, 929 octets, totalElements = 55 pour la categorie 7.
+                 Les trois scenarios ont ete rejoues : 0 % d'erreur.
+
+>>> Incident 2 - argument JMeter perdu au lancement de la campagne
+  Run ......... : premier lancement du script de campagne
+  Symptome .... : aucun fichier de resultats produit, journal JMeter rempli
+                 de la ligne "Setting JMeter property: port=$" suivie de
+                 "IllegalArgumentException: Unknown arg: 9201"
+  Cause ....... : dans l'appel au processus fils, la substitution d'expression
+                 PowerShell a l'interieur du parametre -J a ete coupee en deux ;
+                 l'analyseur a recu "port=$" et un argument orphelin "9201".
+  Correction .. : Construction prealable d'un tableau d'arguments puis appel
+                 par etalement (splatting), ce qui preserve la valeur entiere.
+  Verification  : la ligne "port=9201" apparait correctement dans le journal.
+
+>>> Incident 3 - plan de jointure defavorable cote MariaDB
+  Run ......... : mise au point de la variante A
+  Symptome .... : GET /items?categoryId=.. mettait 17 secondes, alors que la
+                 meme requete en SQL direct repondait en quelques dizaines de
+                 millisecondes
+  Cause ....... : sans indication, l'optimiseur de MariaDB 10.4 demarre la
+                 jointure par la table category (2 000 lignes) au lieu de item
+                 (100 000 lignes) lorsque le tri porte sur item.id ; le tri
+                 devient un tri de fichiers temporaires.
+  Correction .. : La variante A enchaine deux requetes simples (identifiants de
+                 la page, puis chargement par lot) ; la variante C force l'ordre
+                 de jointure avec STRAIGHT_JOIN dans une requete native.
+  Verification  : la latence p95 du scenario S2 descend a 30 ms pour A et 79 ms
+                 pour C, sans erreur.
+
+>>> Bilan des erreurs HTTP
+  Les 27 paliers retenus pour l'analyse se terminent tous a 0 % d'erreur.
+  Les seuls codes d'erreur observes sur l'ensemble de la campagne sont les 404
+  de l'incident 1, avant correction.

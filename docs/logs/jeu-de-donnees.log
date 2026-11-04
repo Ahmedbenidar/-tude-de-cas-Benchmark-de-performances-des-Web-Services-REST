@@ -1,0 +1,52 @@
+=== Jeu de donnees - verification dans MariaDB ===
+Date : 2026-11-04 23:16:32
+
+mysql> SELECT COUNT(*) AS categories FROM category;
++------------+
+| categories |
++------------+
+|       2000 |
++------------+
+
+mysql> SELECT COUNT(*) AS articles FROM item;
++----------+
+| articles |
++----------+
+|   100000 |
++----------+
+
+mysql> SELECT id, code, name FROM category ORDER BY id LIMIT 5;
++----+----------+-----------------------------+
+| id | code     | name                        |
++----+----------+-----------------------------+
+|  1 | CAT-0001 | Informatique Standard 001   |
+|  2 | CAT-0002 | Telephonie Standard 002     |
+|  3 | CAT-0003 | Electromenager Standard 003 |
+|  4 | CAT-0004 | Mobilier Standard 004       |
+|  5 | CAT-0005 | Eclairage Standard 005      |
++----+----------+-----------------------------+
+
+mysql> SELECT id, sku, name, category_id, price, stock FROM item ORDER BY id LIMIT 3;
++----+--------------+------------------------------------+-------------+---------+-------+
+| id | sku          | name                               | category_id | price   | stock |
++----+--------------+------------------------------------+-------------+---------+-------+
+|  1 | SKU-00000001 | Jardinage Connecte lot de 4 000001 |        1327 | 1011.04 |    37 |
+|  2 | SKU-00000002 | Gaming Grand format unite 000002   |         700 | 2892.86 |   224 |
+|  3 | SKU-00000003 | Outillage Grand format pack 000003 |         306 |  900.47 |   172 |
++----+--------------+------------------------------------+-------------+---------+-------+
+
+mysql> SELECT COUNT(*) AS articles_sans_description FROM item WHERE description IS NULL OR description = '';
++---------------------------+
+| articles_sans_description |
++---------------------------+
+|                         0 |
++---------------------------+
+
+mysql> SELECT c.name, COUNT(i.id) AS articles FROM category c JOIN item i ON i.category_id=c.id WHERE c.id IN (7,42,1000) GROUP BY c.id;
++------------------------+----------+
+| name                   | articles |
++------------------------+----------+
+| Jardinage Standard 007 |       60 |
+| Telephonie Pro 042     |       45 |
+| Gaming Standard 1000   |       50 |
++------------------------+----------+

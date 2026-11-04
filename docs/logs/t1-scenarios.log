@@ -1,0 +1,51 @@
+==============================================================================
+ T1 - SCENARIOS DE CHARGE REELLEMENT EXECUTES
+ Campagne du 2026-11-04 - JMeter 5.6.3 en mode CLI (jmeter -n -t)
+==============================================================================
+
+>>> S1 - LECTURE INTENSIVE (READ-heavy, relation categories -> articles)
+  Repartition des requetes
+      50 %  GET /items?page=..&size=..                (liste paginee)
+      20 %  GET /items?categoryId=..&page=..&size=..  (liste filtree)
+      20 %  GET /categories/{id}/items?page=..&size=..
+      10 %  GET /categories?page=..&size=..
+  Paliers prevus par l'enonce ... : 50 -> 100 -> 200 threads, 10 min/palier
+  Paliers reellement joues ...... : 20 -> 60 -> 120 threads, 60 s/palier
+  Montee en charge .............. : 10 s   Payload : aucun
+
+>>> S2 - RECHERCHE FILTREE (JOIN-filter cible)
+  Repartition des requetes
+      70 %  GET /items?categoryId=..&page=..&size=..
+      30 %  GET /items/{id}
+  Paliers prevus par l'enonce ... : 60 -> 120 threads, 8 min/palier
+  Paliers reellement joues ...... : 30 -> 60 threads, 60 s/palier
+  Montee en charge .............. : 10 s   Payload : aucun
+
+>>> S3 - CHARGE MIXTE (MIXED, deux entites en ecriture)
+  Repartition des requetes
+      40 %  GET  /items?page=..
+      20 %  POST /items           (corps 1 Ko)
+      10 %  PUT  /items/{id}      (corps 1 Ko)
+      10 %  DELETE /items/{id}
+      10 %  POST /categories      (corps 0,5 Ko)
+      10 %  PUT  /categories/{id}
+  Paliers prevus par l'enonce ... : 50 -> 100 threads, 10 min/palier
+  Paliers reellement joues ...... : 20 -> 40 threads, 60 s/palier
+  Montee en charge .............. : 10 s   Payload : 1 Ko
+
+>>> S4 - GROS VOLUME (HEAVY-body)
+  Repartition des requetes
+      50 %  POST /items       (corps 5 Ko)
+      50 %  PUT  /items/{id}  (corps 5 Ko)
+  Paliers prevus par l'enonce ... : 30 -> 60 threads, 8 min/palier
+  Paliers reellement joues ...... : 15 -> 30 threads, 60 s/palier
+  Montee en charge .............. : 10 s   Payload : 5 Ko
+
+>>> Ecart assume par rapport a l'enonce
+  Le poste ne dispose que de 4 coeurs physiques et heberge en meme temps le
+  client JMeter, les trois serveurs Java et le serveur MariaDB. Les paliers
+  nominaux (jusqu'a 200 threads pendant 10 minutes) saturent le client avant
+  les serveurs : les chiffres obtenus ne mesureraient plus la variante mais la
+  machine de test. Les paliers ont donc ete reduits a 60 secondes et a des
+  charges de 15 a 120 threads, ce qui suffit a faire apparaitre les ruptures de
+  comportement (voir T2).

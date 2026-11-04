@@ -1,0 +1,43 @@
+==============================================================================
+ T4 / T5 - DETAIL PAR ENDPOINT - S1 - LECTURE INTENSIVE (READ-heavy)
+==============================================================================
++-----------------------------+-----------+-----------+---------+
+| Endpoint                    | Req/s     | p95 ms    | Err. %  |
++-----------------------------+-----------+-----------+---------+
+|      GET categorie id items |       7.1 |     389.0 |     0.0 |
+| GET categories page et size |       3.6 |     254.4 |     0.0 |
+|      GET items page et size |      18.0 |    1651.3 |     0.0 |
+|     GET items par categorie |       7.2 |     380.2 |     0.0 |
+|      GET categorie id items |       6.8 |    2245.6 |     0.0 |
+| GET categories page et size |       3.4 |    1484.2 |     0.0 |
+|      GET items page et size |      17.7 |    3160.8 |     0.0 |
+|     GET items par categorie |       6.9 |    2128.8 |     0.0 |
+|      GET categorie id items |       6.5 |    6311.5 |     0.0 |
+| GET categories page et size |       3.3 |    4675.8 |     0.0 |
+|      GET items page et size |      17.6 |    6628.9 |     0.0 |
+|     GET items par categorie |       6.8 |    5668.5 |     0.0 |
+|      GET categorie id items |       5.4 |      95.0 |     0.0 |
+| GET categories page et size |       2.8 |      64.2 |     0.0 |
+|      GET items page et size |      13.6 |    2660.1 |     0.0 |
+|     GET items par categorie |       5.4 |      59.0 |     0.0 |
+|      GET categorie id items |       5.4 |    2043.5 |     0.0 |
+| GET categories page et size |       2.7 |    1538.8 |     0.0 |
+|      GET items page et size |      13.9 |    6139.0 |     0.0 |
+|     GET items par categorie |       5.4 |    1506.0 |     0.0 |
+|      GET categorie id items |       4.9 |    8142.8 |     0.0 |
+| GET categories page et size |       2.5 |    7050.3 |     0.0 |
+|      GET items page et size |      13.7 |    9057.4 |     0.0 |
+|     GET items par categorie |       5.3 |    6120.4 |     0.0 |
+|      GET categorie id items |       3.2 |     154.0 |     0.0 |
+| GET categories page et size |       1.6 |      49.9 |     0.0 |
+|      GET items page et size |       8.0 |    4476.9 |     0.0 |
+|     GET items par categorie |       3.2 |      86.0 |     0.0 |
+|      GET categorie id items |       4.0 |    1984.4 |     0.0 |
+| GET categories page et size |       1.9 |     889.5 |     0.0 |
+|      GET items page et size |      10.4 |   10233.2 |     0.0 |
+|     GET items par categorie |       4.0 |     912.5 |     0.0 |
+|      GET categorie id items |       3.6 |   10711.5 |     0.0 |
+| GET categories page et size |       1.9 |    4191.6 |     0.0 |
+|      GET items page et size |      10.2 |   13741.6 |     0.0 |
+|     GET items par categorie |       3.8 |    4202.1 |     0.0 |
++-----------------------------+-----------+-----------+---------+

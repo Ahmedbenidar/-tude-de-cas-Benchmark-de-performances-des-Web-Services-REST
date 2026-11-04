@@ -1,0 +1,2 @@
+ALTER TABLE item ADD COLUMN description TEXT NULL AFTER name;
+UPDATE item SET description = CONCAT('Reference ', sku, ' - article du catalogue Maroc Distribution, controle qualite le ', DATE_FORMAT(updated_at, '%d/%m/%Y'), '.');
