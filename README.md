@@ -166,7 +166,7 @@ La troisieme est que les trois serveurs partageaient le meme serveur MariaDB, qu
 
 ## L'arborescence du depot
 
-Les trois projets Maven sont separes, les plans JMeter sont generes par script, les resultats bruts sont conserves dans le dossier de campagne et les tableaux agreges sont a la racine du dossier de resultats.
+Les trois projets Maven sont separes, les plans JMeter sont generes par script, le journal console de chaque palier est conserve dans le dossier de campagne et les tableaux agreges sont a la racine du dossier de resultats. Seuls les fichiers de mesures brutes de JMeter, qui pesent 78 Mo a eux seuls, ne sont pas versionnes : ils se regenerent en rejouant la campagne.
 
 ![Arborescence du projet](docs/captures/structure-projet.png)
 
